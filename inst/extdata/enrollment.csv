@@ -1,0 +1,46 @@
+"academic_year","faculty","study_level","enrollment_count"
+"2022/23","Engineering","Bachelor",1827
+"2023/24","Engineering","Bachelor",1749
+"2024/25","Engineering","Bachelor",1924
+"2022/23","Medicine","Bachelor",1372
+"2023/24","Medicine","Bachelor",1428
+"2024/25","Medicine","Bachelor",1462
+"2022/23","Arts & Humanities","Bachelor",1226
+"2023/24","Arts & Humanities","Bachelor",1194
+"2024/25","Arts & Humanities","Bachelor",1387
+"2022/23","Business","Bachelor",1515
+"2023/24","Business","Bachelor",1704
+"2024/25","Business","Bachelor",1872
+"2022/23","Science","Bachelor",1326
+"2023/24","Science","Bachelor",1479
+"2024/25","Science","Bachelor",1565
+"2022/23","Engineering","Master",618
+"2023/24","Engineering","Master",621
+"2024/25","Engineering","Master",574
+"2022/23","Medicine","Master",409
+"2023/24","Medicine","Master",522
+"2024/25","Medicine","Master",507
+"2022/23","Arts & Humanities","Master",363
+"2023/24","Arts & Humanities","Master",416
+"2024/25","Arts & Humanities","Master",468
+"2022/23","Business","Master",582
+"2023/24","Business","Master",548
+"2024/25","Business","Master",580
+"2022/23","Science","Master",455
+"2023/24","Science","Master",537
+"2024/25","Science","Master",534
+"2022/23","Engineering","PhD",140
+"2023/24","Engineering","PhD",149
+"2024/25","Engineering","PhD",159
+"2022/23","Medicine","PhD",103
+"2023/24","Medicine","PhD",115
+"2024/25","Medicine","PhD",108
+"2022/23","Arts & Humanities","PhD",88
+"2023/24","Arts & Humanities","PhD",92
+"2024/25","Arts & Humanities","PhD",89
+"2022/23","Business","PhD",122
+"2023/24","Business","PhD",129
+"2024/25","Business","PhD",132
+"2022/23","Science","PhD",118
+"2023/24","Science","PhD",116
+"2024/25","Science","PhD",117

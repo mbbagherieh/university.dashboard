@@ -1,18 +1,23 @@
-#' The application User-Interface
-#'
-#' @param request Internal parameter for `{shiny}`.
-#'     DO NOT REMOVE.
 #' @import shiny
 #' @noRd
 app_ui <- function(request) {
-	tagList(
-		# Leave this function for adding external resources
-		golem_add_external_resources(),
-		# Your application UI logic
-		fluidPage(
-			golem::golem_welcome_page() # Remove this line to start building your UI
-		)
-	)
+  tagList(
+    # Leave this function for adding external resources
+    golem_add_external_resources(),
+    # Your application UI logic
+    fluidPage(
+      theme = bslib::bs_theme(version = 5, bootswatch = "flatly"),
+      titlePanel("University Decision Support Dashboard"),
+      
+      # Create a tabbed layout
+      tabsetPanel(
+        id = "main_tabs",
+        tabPanel("Enrollment", mod_enrollment_ui("enrollment_1")),
+        tabPanel("Evaluations", mod_eval_ui("eval_1")),
+        tabPanel("Research", mod_research_ui("research_1")) # <-- Add this line
+      )
+    )
+  )
 }
 
 #' Add external Resources to the Application
@@ -24,18 +29,16 @@ app_ui <- function(request) {
 #' @importFrom golem add_resource_path activate_js favicon bundle_resources
 #' @noRd
 golem_add_external_resources <- function() {
-	add_resource_path(
-		"www",
-		app_sys("app/www")
-	)
-
-	tags$head(
-		favicon(),
-		bundle_resources(
-			path = app_sys("app/www"),
-			app_title = "university.dashboard"
-		)
-		# Add here other external resources
-		# for example, you can add shinyalert::useShinyalert()
-	)
+  add_resource_path(
+    "www",
+    app_sys("app/www")
+  )
+  
+  tags$head(
+    favicon(),
+    bundle_resources(
+      path = app_sys("app/www"),
+      app_title = "university.dashboard"
+    )
+  )
 }
