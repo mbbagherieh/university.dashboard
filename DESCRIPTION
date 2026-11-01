@@ -1,0 +1,17 @@
+Package: university.dashboard
+Title: University Decision Support Dashboard
+Version: 0.0.1
+Authors@R: 
+    person("Mohammad B.", "Bagherieh-Najjar", , "m.b.bagherieh@gmail.com", role = c("aut", "cre"))
+Description: An interactive dashboard for university stakeholders and the governing council to explore enrollment, satisfaction, and research data.
+License: MIT + file LICENSE
+Imports: 
+    config,
+    golem,
+    shiny
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
