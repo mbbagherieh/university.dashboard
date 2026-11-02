@@ -1,3 +1,5 @@
+#' @importFrom utils read.csv
+NULL
 #' Load University Data Sources
 #' 
 #' Reads the three CSV files from inst/extdata and returns a list of data frames.

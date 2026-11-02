@@ -17,3 +17,11 @@ importFrom(shiny,
   tagList,
   tags
 )
+importFrom(stats,
+  aggregate,
+  median
+)
+importFrom(utils,
+  read.csv,
+  write.csv
+)

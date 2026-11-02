@@ -1,3 +1,5 @@
+#' @importFrom stats aggregate median
+NULL
 #' Summarize Enrollment
 #' @noRd
 summarize_enrollment <- function(data, faculties = NULL, levels = NULL) {

@@ -2,6 +2,8 @@
 #'     DO NOT REMOVE.
 #' @import shiny
 #' @noRd
+#' @importFrom utils read.csv write.csv
+NULL
 app_server <- function(input, output, session) {
   
   # 1. Load the default data once when the app starts
