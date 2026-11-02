@@ -17,7 +17,7 @@ You can install the development version of `{university.dashboard}` from
 [GitHub](https://github.com/mbagherieh/university.dashboard) with:
 
 \`\`\`r \# install.packages(“remotes”)
-remotes::install_github(“mbagherieh/university.dashboard”) \`\`\`
+remotes::install_github(“mbbagherieh/university.dashboard”) \`\`\`
 
 ## Run
 
