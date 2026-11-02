@@ -35,7 +35,8 @@ mod_enrollment_server <- function(id, enrollment_data) {
       facs <- if ("All" %in% input$faculty) NULL else input$faculty
       levs <- if ("All" %in% input$level) NULL else input$level
       
-      summarize_enrollment(enrollment_data, faculties = facs, levels = levs)
+      # ADD THE PARENTHESES HERE:
+      summarize_enrollment(enrollment_data(), faculties = facs, levels = levs)
     })
     
     # Render the interactive plot

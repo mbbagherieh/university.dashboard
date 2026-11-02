@@ -25,7 +25,9 @@ mod_eval_server <- function(id, eval_data) {
     # Reactive to filter data based on user inputs
     filtered_data <- reactive({
       deps <- if ("All" %in% input$department) NULL else input$department
-      summarize_eval_scores(eval_data, departments = deps)
+      
+      # ADD THE PARENTHESES HERE:
+      summarize_eval_scores(eval_data(), departments = deps)
     })
     
     # Render the interactive plot

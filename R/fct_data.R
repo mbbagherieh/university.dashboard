@@ -31,3 +31,14 @@ load_university_data <- function() {
     research = res
   )
 }
+#' Validate Uploaded Data
+#' 
+#' Checks if the uploaded dataframe has the required columns.
+#' @noRd
+validate_upload <- function(df, required_cols) {
+  missing_cols <- setdiff(required_cols, names(df))
+  if (length(missing_cols) > 0) {
+    stop(paste("Missing required columns:", paste(missing_cols, collapse = ", ")))
+  }
+  return(TRUE)
+}

@@ -34,7 +34,9 @@ mod_research_server <- function(id, research_data) {
     # Reactive to filter data based on user inputs
     filtered_data <- reactive({
       facs <- if ("All" %in% input$faculty) NULL else input$faculty
-      summarize_research(research_data, faculties = facs)
+      
+      # ADD THE PARENTHESES HERE:
+      summarize_research(research_data(), faculties = facs)
     })
     
     # Render the interactive plot
