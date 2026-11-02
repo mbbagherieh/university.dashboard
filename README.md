@@ -1,7 +1,5 @@
 
-<!-- README.md is generated from README.Rmd. Please edit that file -->
-
-# `{university.dashboard}`
+# {university.dashboard}
 
 <!-- badges: start -->
 
@@ -9,33 +7,24 @@
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
 
+A production-grade interactive dashboard for university stakeholders and
+the governing council to explore enrollment, satisfaction, and research
+data.
+
 ## Installation
 
-You can install the development version from
+You can install the development version of `{university.dashboard}` from
 [GitHub](https://github.com/mbagherieh/university.dashboard) with:
 
-``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
-```
+\`\`\`r \# install.packages(“remotes”)
+remotes::install_github(“mbagherieh/university.dashboard”) \`\`\`
 
 ## Run
 
-You can launch the application by running:
+You can launch the application locally by running:
 
-``` r
-# install.packages("remotes")
-remotes::install_github("mbagherieh/university.dashboard")
-```
+\`\`\`r university.dashboard::run_app() \`\`\`
 
 ## About
 
-You are reading the doc about version : 0.0.1
-
-This README has been compiled on the
-
-``` r
-Sys.time()
-#> [1] "2026-11-02 05:31:51 +0330"
-```
-
-Here are the tests results and package coverage:
+You are reading the documentation for version `0.0.1`.
